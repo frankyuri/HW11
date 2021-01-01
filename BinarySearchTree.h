@@ -181,20 +181,6 @@ void BinarySearchTree<ItemType>::levelorder(void visit(BinaryNode<ItemType>&), B
 			nodeQueue.push(nodeQueue.front()->getRightChildPtr());
 		nodeQueue.pop();
 	}
-
-	/*do {
-		while (tmpPtr != NULL) {
-			nodeQueue.push(tmpPtr);
-			tmpPtr = tmpPtr->getLeftChildPtr();
-		}
-
-		if (!nodeQueue.empty()) {
-			tmpPtr = nodeQueue.front();
-			visit(*tmpPtr);
-			nodeQueue.pop();
-			tmpPtr = tmpPtr->getRightChildPtr();
-		}
-	} while (!nodeQueue.empty() || tmpPtr != NULL);*/
 }  // end levelorder
 
 template<class ItemType>
